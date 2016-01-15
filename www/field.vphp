@@ -1,0 +1,2 @@
+<input type="text" style="display:none" class="__hidden" value="<?php iv('value')?>">
+<input type="text" class="__input" id="<?php iv('fieldId')?>" style="display:none" value="<?php iv('value')?>">

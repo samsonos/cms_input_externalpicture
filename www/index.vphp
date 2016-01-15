@@ -1,0 +1,21 @@
+<div class="__externalPicture">
+	<div class="imagePreview" style="display: <?php isv('defaultValue', 'none', 'block')?>">
+			<a href="<?php iv('clearFieldController'); iv('paramController') ?>" class="removeExternalPicture"
+			   title="<?php t('Очистить поле')?>">
+			</a>
+			<img src="<?php iv('value')?>"/>
+	</div>
+
+	<div class="__inputfield <?php iv('cssClass') ?> <?php isv('defaultValue', '__empty')?>"
+		 style="display: <?php isv('defaultValue', 'block', 'none')?>">
+		<span><?php iv('textInput') ?></span>
+		<input type="hidden" name="inputText" value="<?php iv('textInput')?>">
+		<input type="hidden" name="clearConfirm" value="<?php iv('textClearConfirm')?>">
+		<input type="hidden" name="__action" value="<?php iv('action')?>">
+		<input type="hidden" name="__entity" value="<?php iv('entity')?>">
+		<input type="hidden" name="__param" value="<?php iv('param')?>">
+		<input type="hidden" name="__obj_id" value="<?php iv('objectId')?>">
+		<input type="hidden" name="__empty_text" value="<?php t('Введите значение')?>">
+		<?php iv('view')?>
+	</div>
+</div>
