@@ -46,7 +46,7 @@ class ExternalPicture extends Field
             ->set('param', $this->param)
             ->set('objectId', $this->dbObject->id)
             ->set('applicationId', $renderer->id())
-            ->set('view', $this->viewField($renderer))
+            ->set('fieldView', $this->viewField($renderer))
             ->output();
     }
 }
